@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">First Name:</label>
+        <input id="firstName" type="text" name="firstName" placeholder="Please enter name*" required>
+        <br><br>
+        <label for="name">Last Name:</label>
+        <input id="firstName" type="text" name="lastName" placeholder="Please enter name*" required>
+        <br><br>
+        <label for="sex">Sex:</label>
+        <input type="radio" name="sex" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="sex" id="female" value="female">
+        <label for="female">Female</label> 
+        <input type="radio" name="sex" id="LGBTQ" value="LGBTQ">
+        <label for="LGBTQ">LGBTQ</label>
+        <br><br>
+        <label for="department">Department: </label>
+        <select name="department" id="department">
+            <option>Select an option</option>
+            <option value="CS">CS</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+        </select>
+        <br><br>
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="30" rows="4"></textarea>
+        <br><br>
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <label for="newsletter">Subscribe?</label>
+        <br><br>
+        <input type="submit" value="Submit" onclick="display()">
+    </form>
+    <br>
+    <div id="disp" style=
+        "color:green; font-size:18px; font-weight:bold;">
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="/main.js">
+</script>
+</html>
