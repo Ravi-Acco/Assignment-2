@@ -1,43 +1,3 @@
-
-// const txt1=document.getElementById('firstname')
-// const txt2=document.getElementById('lastname')
-// const age=document.getElementById('age')
-// const roll=document.getElementById('rollno')
-// const dob=document.getElementById('date')
-// const btn=document.getElementById('btn')
-// const txt1=$('#firstname').val();
-// const txt2=$('#lastname').val();
-// const age=$('#age').val();
-// const roll=$('rollno').val();
-// const dib=$('#date').val();
-// const btn=document.getElementById('btn')
-
-// function fun(){
-//     const details=[("The firstName is : "+txt1),("The lastName is : "+txt2), ("The Age is : "+age),("The Roll Number is : "+roll),("The Date of Birth is : "+date)]
-//     alert(details.join("\n"));
-// }
-// btn.addEventListener('click',fun);
-// window.onload = function(){
-//     alert("document is loading")
-//     }
-// window.addEventListener('DOMContentLoaded',(event) => {
-//     //your code here
-// });
-   
-// function test(){
-//     alert("test is here");
-//     var Firstname=$("firstname")
-//     // let firstname=Firstname.value
-//     Firstname[0].css("color","red")
-//     greet(Firstname[0].value);
-//     function greet(yourname){
-//         alert("hello" ${yourname} )
-//     }
-
-// };
-// $(function()){
-//     alert("hello this is jquery");
-// }
 let students = [];
 
     function createStudent() {
@@ -77,21 +37,17 @@ let students = [];
         };
 
         students.push(student);
-        // alert(students[0]['rollNo'],JSON.stringify(students))
     }
 
     function getStudentDetails() {
         const rollNo = document.getElementById('rollnoinput').value;
         let student = null;
-        // alert(JSON.stringify(students))
         for(let i=0;i<students.length;i++){
             if (students[i]['rollNo'] ===rollNo){
                 student=students[i];
                 break;
             }
         }
-        // alert(JSON.stringify(student))
-
         if (student) {
             let studentInfo =` Student Details:\n\n`;
         studentInfo += `First Name: ${student.firstName}\n`;

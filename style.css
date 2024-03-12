@@ -12,8 +12,6 @@ body{
     background-image: url("regis3.jpg");
     background-repeat: no-repeat;
     background-size: cover;    
-
-    /* background: linear-gradient(rgb(100, 6, 100),rgb(218, 141, 0)); */
 }
 .container{
     display: flex;
@@ -72,7 +70,6 @@ body{
 
 .get-button{
     margin: 5px;
-    /* padding: 10px; */
     width: 50%;
     border-radius: 20px;
     background-color:rgb(59, 57, 173);
