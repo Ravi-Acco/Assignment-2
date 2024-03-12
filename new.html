@@ -9,6 +9,7 @@
     <title>FORM</title>
 </head>
 <body>
+    <div><img src="/card.avif" alt=""></div>
     <div class="container">
     <h1>Registration Form</h1>
     <form id="studentForm"  onsubmit="createStudent(); return false;">
@@ -48,9 +49,9 @@
         <input type="text" id="hobby" class="text" placeholder="your hobbies" required></div>
         <div class="button">
         <input type="submit" id="submitbuttn" onclick="createStudent()"></div>
-        
+        <br>
         <div class="button">
-            <input type="text" id="rollnoinput" placeholder="enter roll no.">
+            <input type="text" id="rollnoinput" placeholder="Enter roll no.">
             <input type="button" id="btn" value="get details" onclick="getStudentDetails()"></div>
     </form>
     <div id="studentDetails"></div>
